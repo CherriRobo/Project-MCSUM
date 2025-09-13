@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "mcsum",
+  "version": "${version}",
+  "name": "Project: MCSUM (Minecraft 1.21.8 / Fabric 0.17.2)",
+  "description": "Mod for Project: MCSUM\n\nCredits: Dani (CherriRobo).",
+  "authors": [
+    "Dani (CherriRobo)."
+  ],
+  "entrypoints": {
+  "main": [ "com.mcsum.MCSUMMod" ],
+  "client": [ "com.mcsum.client.MCSUMClient" ]
+},
+  "depends": {
+    "fabricloader": ">=0.17.2",
+    "minecraft": "1.21.8",
+    "fabric-api": "*"
+  }
+}
