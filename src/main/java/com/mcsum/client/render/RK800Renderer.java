@@ -1,5 +1,7 @@
+/* Package. */
 package com.mcsum.client.render;
 
+/* Imports. */
 import com.mcsum.rk800.RK800Entity;
 import net.minecraft.client.render.entity.EntityRendererFactory.Context;
 import net.minecraft.client.render.entity.MobEntityRenderer;
@@ -11,21 +13,25 @@ import net.minecraft.util.Identifier;
 public class RK800Renderer extends MobEntityRenderer<RK800Entity, PlayerEntityRenderState, PlayerEntityModel> {
     private static final Identifier TEX = Identifier.of("mcsum", "textures/entity/rk800.png");
 
+    /* Constructor. */
     public RK800Renderer(Context ctx, boolean slim) {
-        super(ctx,
+        super(
+            ctx,
             new PlayerEntityModel(
                 ctx.getPart(slim ? EntityModelLayers.PLAYER_SLIM : EntityModelLayers.PLAYER),
                 slim
             ),
-            0.5f
+            0.5f // Shadow size.
         );
     }
 
+    /* Render state. */
     @Override
     public PlayerEntityRenderState createRenderState() {
         return new PlayerEntityRenderState();
     }
 
+    /* Texture. */
     @Override
     public Identifier getTexture(PlayerEntityRenderState state) {
         return TEX;
