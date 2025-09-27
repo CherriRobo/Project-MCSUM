@@ -69,7 +69,7 @@ private static class CelebrateSequenceGoal extends Goal {
     private final double triggerRadius;
     private PlayerEntity target;
 
-    //Phases
+    //Phases.
     private static final int PHASE_JUMP  = 0;
     private static final int PHASE_PAUSE = 1;
     private static final int PHASE_CROUCH_CIRCLE = 2;
